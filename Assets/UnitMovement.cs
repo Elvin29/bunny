@@ -7,31 +7,29 @@ public class UnitMovement : MonoBehaviour {
     private float Speed = 2f;
     private Vector3 rotateSpeed = Vector3.down * 50f;
 
-    Transform player;
-    NavMeshAgent nav;
+   
+
 
     // Use this for initialization
     void Start () {
 
-        player = GameObject.FindGameObjectWithTag("Player2").transform;
-        nav = GetComponent<NavMeshAgent>();
+        
+ 
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-        CastleMovement();
+        MovementToTarget();
         //nav.SetDestination(player.position);
 
         //Find Castle then movetowards it this should always be overridden by closest unit
        // Movement();
 
 	}
-    void CastleMovement()
+    void MovementToTarget()
     {
-
-
-
+        // THe default target is the castle but this can be changed with the change target function
         //This needs to be edited so that it rotates until it faces a certain target
         //transform.Rotate(rotateSpeed * Time.deltaTime);
 
@@ -45,5 +43,10 @@ public class UnitMovement : MonoBehaviour {
         transform.position = Vector3.MoveTowards(transform.position, target.position, Speed * Time.deltaTime);
 
     }
+   public void ChangeTarget(Transform newTarget)
+    {
+        target = newTarget;
 
-}
+    }
+
+    }

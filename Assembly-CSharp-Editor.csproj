@@ -59,6 +59,9 @@
      <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\SunShaftsEditor.cs" />
      <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\TonemappingEditor.cs" />
      <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\VignetteAndChromaticAberrationEditor.cs" />
+     <Compile Include="Assets\RewindTools\PixelPerfectGameWindow\Editor\PixelPerfectGameWindow.cs" />
+     <Compile Include="Assets\RewindTools\PixelPerfectGameWindow\Editor\PixelPerfectGameWindowEditorWindow.cs" />
+     <Compile Include="Assets\RewindTools\Shared\Editor\RWDStyles.cs" />
      <Compile Include="Assets\WorldBuilder\Editor\World.cs" />
      <Compile Include="Assets\WorldBuilder\Editor\WorldGen.cs" />
      <Compile Include="Assets\_CompletedAssets\MobileInput\Scripts\Editor\CrossPlatformInputInitialize.cs" />
